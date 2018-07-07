@@ -1,0 +1,16 @@
+{
+  "apps" : [
+    {
+      "name": "pm2_node_express_jwt_async-" + process.env.NODE_ENV || "dev",
+      "script": "bin/www.js",
+      "watch": ["bin/www.js", "app.js", "bin", "config", "routes", "utils"],
+      "ignore_watch": ["public"],
+      "watch_options": {
+        "ignored": ".*"
+      },
+      "env": {
+        "NODE_PATH": "."
+      }
+    }
+  ]
+}

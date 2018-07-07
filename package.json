@@ -1,0 +1,30 @@
+{
+  "name": "pm2_node_express_jwt_async",
+  "version": "0.0.0",
+  "private": true,
+  "config": {
+    "appname": "pm2_node_express_jwt_async"
+  },
+  "scripts": {
+    "start": "DEBUG=debug,logger NODE_ENV=development pm2 start pm2.json",
+    "stop": "pm2 delete $npm_package_config_appname-development",
+    "log": "pm2 logs $npm_package_config_appname-development"
+  },
+  "dependencies": {
+    "async": "2.6.1",
+    "axios": "0.18.0",
+    "body-parser": "1.18.3",
+    "cookie-parser": "1.4.3",
+    "debug": "3.1.0",
+    "ejs": "2.5.7",
+    "express": "4.16.0",
+    "express-unless": "0.5.0",
+    "http-errors": "1.6.2",
+    "jsonwebtoken": "8.3.0",
+    "lodash": "4.17.10",
+    "moment": "2.22.2",
+    "morgan": "1.9.0",
+    "serve-favicon": "^2.5.0",
+    "util": "0.11.0"
+  }
+}
